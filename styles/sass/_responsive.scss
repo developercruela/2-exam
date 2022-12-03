@@ -1,0 +1,125 @@
+@import "./variables";
+
+@media (max-width:$lg){
+    .container{
+        width: $md - 20px;
+    }
+    section#grid{
+        .cards{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    section#showcase2{
+        justify-content: start;
+        .more{
+            width: 250px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+
+@media (max-width:$md){
+    .container{
+        width: $sm - 20px;
+    }
+
+    header#main-header{
+        nav{
+            justify-content: center;
+            .main-links,.button, .down,.search{
+                display: none;
+            }
+        }
+        aside.side{
+            display: block;
+            padding-inline: 1rem;
+        }
+
+        section#showcase{
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            .more{
+                width: 90%;
+            }
+        }
+    }
+
+    section#showcase2{
+        flex-wrap: wrap;
+        justify-content: center;
+        .more{
+            width: 90%;
+            padding-bottom: 30px;
+        }
+    }
+
+    section#grid{
+        .whatsnews{
+            margin-bottom: 20px;
+        }
+        .cards{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+    section#partners{
+        display: none;
+    }
+
+    section#adoption{
+        display: none;
+    }
+
+    section#knowledge{
+        .cards{
+        display: none;
+        }
+    }
+}
+
+
+@media (max-width:$sm){
+    .container{
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    section#showcase{
+        .more{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+    } 
+
+    section#grid{
+        .cards{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    footer{
+        .subcribe{
+        flex-wrap: wrap;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        .input{
+            width: 350px;
+            height: 150px;
+            border-radius: 20px;
+            flex-wrap: wrap;
+        }
+    }
+    .nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        .icons{
+            padding-top: 30px;
+        }
+    }
+  }
+}    
+    

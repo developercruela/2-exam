@@ -1,0 +1,53 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+    width: 180px;
+    height: 40px;
+    color: $white;
+    border-radius: 20px;
+    &:hover{
+        background-color: #1a5885;
+    }
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $white;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid $blue;
+    &:hover{
+        background-color: #c0c8cddf;;
+    }
+}
+
+.surprise{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    color: $blue;
+    border-radius: 8px;
+    background-color: $yellow;
+    text-align: center;
+}
+
+.knowledge{
+    width: 150px;
+    height: 30px;
+    background: #00A7E7;
+    border-radius: 28px;
+    text-align: center;
+    color: $white;
+}
+
